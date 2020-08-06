@@ -1,0 +1,23 @@
+{
+  "name": "srg-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
+    "@sanity/client": "^1.149.18",
+    "@sanity/image-url": "^0.140.19",
+    "firebase": "^7.17.1",
+    "groq": "^1.149.16",
+    "next": "9.5.0",
+    "next-pwa": "^3.1.1",
+    "qrcode.react": "^1.0.0",
+    "react": "16.13.1",
+    "react-awesome-button": "^6.5.1",
+    "react-dom": "16.13.1"
+  }
+}
