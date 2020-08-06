@@ -23,12 +23,12 @@ const Articles = (props) => {
             <meta name="description" content={"These are the articles by the Plastic Oceans JMSS team."} />
 
             <meta property="og:type" content="website" />
-            <meta property="og:url" content={"https://plastic-oceans-jmss.netlify.app/articles"} />
+            <meta property="og:url" content={"https://jmss-plastic-oceans.vercel.app/articles"} />
             <meta property="og:title" content={`Articles | Plastic Oceans JMSS`} />
             <meta property="og:description" content={"These are the articles by the Plastic Oceans JMSS team."} />
 
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content={"https://plastic-oceans-jmss.netlify.app/articles"} />
+            <meta property="twitter:url" content={"https://jmss-plastic-oceans.vercel.app/articles"} />
             <meta property="twitter:title" content={`Articles | Plastic Oceans JMSS`} />
             <meta property="twitter:description" content={"These are the articles by the Plastic Oceans JMSS team."} />
 

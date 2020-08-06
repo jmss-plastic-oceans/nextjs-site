@@ -11,7 +11,7 @@ export default function Home() {
 
         <meta property="og:title" content="Plastic Oceans JMSS" />
         <meta property="og:site_name" content="Plastic Oceans JMSS" />
-        <meta property="og:url" content="https://plastic-oceans-jmss.netlify.app" />
+        <meta property="og:url" content="https://jmss-plastic-oceans.vercel.app" />
         <meta property="og:description" content="We are the Plastic Oceans environmentalist team at John Monash Science School." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="images/poalogo.png" />
