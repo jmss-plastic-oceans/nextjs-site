@@ -23,13 +23,13 @@ function Home(props) {
       <meta property="og:url" content="https://jmss-plastic-oceans.vercel.app" />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="images/poalogo.png" />
+      <meta property="og:image" content="../images/poalogo.png" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={`${title} | Plastic Oceans JMSS`} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:title" content="Plastic Oceans JMSS" />
-      <meta name="twitter:image" content="images/poalogo.png" />
+      <meta name="twitter:image" content="../images/poalogo.png" />
 
     </Head>
 
@@ -37,14 +37,14 @@ function Home(props) {
 
     <header className={styles.header}>
 
-      <img className={styles.mobileLogo} src="images/ps.png" />
+      <img className={styles.mobileLogo} src="../images/ps.png" />
 
       <nav className={styles.nav}>
 
         <Link href="/"><a>Home</a></Link>
         <Link href="/pages/mission"><a>Our Mission</a></Link>
         <Link href="/articles"><a>Articles</a></Link>
-        <img src="images/ps.png"/>
+        <img src="../images/ps.png"/>
         <Link href="/pages/get-involved"><a>Get Involved</a></Link>
         <Link href="/pages/quiz"><a>Quiz</a></Link>
         <Link href="/pages/contact"><a>Contact</a></Link>
@@ -57,7 +57,7 @@ function Home(props) {
       <div className={styles.pageContent}>
         <BlockContent
           blocks={body}
-          imageOptions={{ w: 320, h: 240, fit: 'max' }}
+          imageOptions={{ w: 900, fit: 'max' }}
           {...client.config()}
         />
       </div>
