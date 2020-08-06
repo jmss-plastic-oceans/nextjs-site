@@ -2,14 +2,14 @@
 import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
-import client from '../client';
+import client from '../../client';
 import Head from 'next/head'
-import styles from '../styles/Page.module.css'
+import styles from '../../styles/Page.module.css';
 import Link from 'next/link';
 
 function Home(props) {
 
-  const {title, body, description} = props;
+  const {title = "404 - Page not found." , body, description = "404 - Page not found."} = props;
   
   return (
     <div class="nextContent">
@@ -41,13 +41,13 @@ function Home(props) {
 
       <nav className={styles.nav}>
 
-        <Link href="/"><a>Home</a></Link>
-        <Link href="/pages/mission"><a>Our Mission</a></Link>
+        <Link href="/mission"><a>Home</a></Link>
+        <Link href="/mission"><a>Our Mission</a></Link>
         <Link href="/articles"><a>Articles</a></Link>
-        <img src="images/ps.png"/>
-        <Link href="/pages/get-involved"><a>Get Involved</a></Link>
-        <Link href="/pages/quiz"><a>Quiz</a></Link>
-        <Link href="/pages/contact"><a>Contact</a></Link>
+        <img src="../images/ps.png"/>
+        <Link href="/mission"><a>Get Involved</a></Link>
+        <Link href="/mission"><a>Quiz</a></Link>
+        <Link href="/mission"><a>Contact</a></Link>
 
       </nav>
 
@@ -77,14 +77,16 @@ function Home(props) {
   )
 }
 
-const query = groq`*[_type == "page" && location == "frontpage" ][0]{
+const query = groq`*[_type == "page" && location == $slug ][0]{
   title,
   body,
   description
 }`
 
 Home.getInitialProps = async function(context) {
-  let sanityResult = await client.fetch(query);
+  const { slug = "" } = context.query;
+  console.log(slug);
+  let sanityResult = await client.fetch(query, {slug});
   return {...sanityResult};
 }
 

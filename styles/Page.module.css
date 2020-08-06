@@ -1,0 +1,146 @@
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.main > * {
+  text-align: center;
+}
+
+.main a {
+  text-decoration: underline;
+}
+
+.main a:hover {
+  color: navy;
+  text-decoration-color: navy;
+}
+
+img.image {
+  max-height: 40vh;
+  max-width: 100vw;
+}
+
+.header {
+  width: 100vw;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  border-bottom: 2px solid #EEE;
+}
+
+.header nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header nav a {text-decoration: none;}
+.header nav a:hover {text-decoration: underline;}
+
+.header nav img {
+  max-height: 3rem;
+}
+
+.contentContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100vw;
+}
+
+.contentContainer .pageContent {
+  max-width: 80vw;
+}
+
+.contentContainer .pageContent h1 {
+  font-size: 5rem;
+  color: lightcoral;
+  margin: 2rem 0;
+}
+
+.contentContainer .pageContent h2 {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
+}
+
+.footer {
+  background-color: white;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 60px;
+  border-top: 2px solid #EEE;
+}
+
+.footer p, .footer pre {
+  margin: 10px 20px;
+}
+
+.footer pre {color: rgba(0, 0, 0, 0.5);}
+
+.footer p a {
+  color: coral;
+}
+
+.footer pre a {
+  padding: 4px;
+  background-color: black;
+  color: yellow;
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 0;
+    margin: 20px;
+    margin-top: 0;
+  }
+
+  .header nav img {
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+    align-self: center;
+    max-height: 8vh;
+    margin: 10px;
+    margin-top: -10px;
+  }
+
+  .header nav a {
+    margin: 5px;
+  }
+
+  .contentContainer .pageContent { 
+    max-width: 100w;
+  }
+
+  .contentContainer .pageContent h1 {
+    font-size: 3rem;
+  }
+
+}
