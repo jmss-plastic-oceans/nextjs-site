@@ -14,6 +14,7 @@ class MyDocument extends Document {
         <Head>
 
             <meta charSet='utf-8' />
+            <link rel="icon" href="favicon.png" />
 
             <meta property="og:title" content="Plastic Oceans JMSS" />
             <meta property="og:site_name" content="Plastic Oceans JMSS" />

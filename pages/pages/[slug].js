@@ -16,7 +16,8 @@ function Home(props) {
     <Head>
         
       <title>{`${title} | Plastic Oceans JMSS`}</title>
-      <meta name="keywords" content="Conservation,Activism,Environment,Pollution,School,Student,Health,Social"></meta>
+      <meta name="keywords" content="Conservation,Activism,Environment,Pollution,School,Student,Health,Social" />
+      <link rel="icon" href="../favicon.png" />
 
       <meta property="og:title" content={`${title} | Plastic Oceans JMSS`} />
       <meta property="og:site_name" content="Plastic Oceans JMSS" />

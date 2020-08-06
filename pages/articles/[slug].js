@@ -30,6 +30,7 @@ const Article = (props) => {
     <title>{`${title} | Plastic Oceans JMSS`}</title>
     <meta name="title" content={`${title} | Plastic Oceans JMSS`} />
     <meta name="description" content={shortdescription} />
+    <link rel="icon" href="../favicon.png" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content={"https://jmss-plastic-oceans.vercel.app/articles/" + aslug} />
@@ -67,11 +68,13 @@ const Article = (props) => {
           }
         </ul>
 
-        <BlockContent
-          blocks={body}
-          imageOptions={{ w: 320, h: 240, fit: 'max' }}
-          {...client.config()}
-        />
+        <div class="content">
+          <BlockContent
+            blocks={body}
+            imageOptions={{ w: 320, h: 240, fit: 'max' }}
+            {...client.config()}
+          />
+        </div>
 
       </article>
     </main>
