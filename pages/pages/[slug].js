@@ -41,13 +41,13 @@ function Home(props) {
 
       <nav className={styles.nav}>
 
-        <Link href="/mission"><a>Home</a></Link>
-        <Link href="/mission"><a>Our Mission</a></Link>
+        <Link href="/"><a>Home</a></Link>
+        <Link href="/pages/mission"><a>Our Mission</a></Link>
         <Link href="/articles"><a>Articles</a></Link>
-        <img src="../images/ps.png"/>
-        <Link href="/mission"><a>Get Involved</a></Link>
-        <Link href="/mission"><a>Quiz</a></Link>
-        <Link href="/mission"><a>Contact</a></Link>
+        <img src="images/ps.png"/>
+        <Link href="/pages/get-involved"><a>Get Involved</a></Link>
+        <Link href="/pages/quiz"><a>Quiz</a></Link>
+        <Link href="/pages/contact"><a>Contact</a></Link>
 
       </nav>
 
